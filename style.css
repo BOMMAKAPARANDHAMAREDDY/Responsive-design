@@ -1,0 +1,150 @@
+* {
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    overflow: auto;
+    font-size: 18px;
+}
+nav > a{
+    color: white;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(78, 78, 78);
+    padding: 5px;
+}
+#heroSection{
+    width: 200%;
+    display: flex;
+}
+section{
+    width: 50%;
+}
+span{
+    color: white;
+}
+
+section{
+    padding: 10px;
+    margin: 10px;
+}
+#icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#input {
+    padding: 20px;
+}
+
+#input input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+#input input::placeholder {
+    color: #403d39;
+}
+#icons .search{
+    width: 700px;
+
+}
+.container{
+    float: right;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas: 
+    "qwer tyu img wer"
+    "des ret po yt"
+    "wed sre uy ik"
+    ;
+}
+div:nth-child(1){
+    grid-area: qwer;
+}
+div:nth-child(2){
+    grid-area: tyu;
+}
+div:nth-child(3){
+    grid-area: img;
+}
+div:nth-child(4){
+    grid-area: wer;
+}
+div:nth-child(5){
+    grid-area: des;
+}
+div:nth-child(6){
+    grid-area: ret;
+}
+div:nth-child(7){
+    grid-area: po;
+}
+div:nth-child(8){
+    grid-area: yt;
+}
+div:nth-child(9){
+    grid-area: wed;
+}
+div:nth-child(10){
+    grid-area: sre;
+}
+div:nth-child(11){
+    grid-area: uy;
+}
+div:nth-child(12){
+    grid-area: ik;
+}
+@media only screen and (max-width: 600px) {
+    #icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #input nav {
+        overflow-x: auto;
+        background-color: #343434;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #input a {
+        width: auto;
+        margin: 5px;
+    }
+
+    #heroSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sideBar section div {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .container div {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+}
