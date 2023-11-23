@@ -116,14 +116,14 @@ div:nth-child(12){
     .search {
         width: 100%;
         margin-top: 10px;
+        visibility: hidden;
     }
 
     #input nav {
-        overflow-x: auto;
+        overflow-x: scroll;
         background-color: #343434;
         padding: 10px;
-        display: flex;
-        flex-direction: row;
+        display: none;
     }
 
     #input a {
@@ -137,12 +137,16 @@ div:nth-child(12){
     }
 
     #sideBar section div {
-        display: flex;
+        display: none;
         flex-direction: row;
         text-align: center;
     }
 
     .container div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        word-wrap: break-word;
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
