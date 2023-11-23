@@ -134,6 +134,8 @@ div:nth-child(12){
     #heroSection {
         display: flex;
         flex-direction: column;
+        flex-flow: column;
+        
     }
 
     #sideBar section div {
@@ -142,11 +144,15 @@ div:nth-child(12){
         text-align: center;
     }
 
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
     .container div {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        word-wrap: break-word;
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
